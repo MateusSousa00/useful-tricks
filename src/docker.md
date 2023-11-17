@@ -36,5 +36,8 @@ docker run -d \
     postgres:latest
 ```
 
-## removing images with <none>
+## removing images with ``<none>``
 ``docker rmi $(docker images -a -q -f "dangling=true")``
+
+## removing containers with status "Exited"
+``docker rm $(docker ps -a -f status=exited -q)``
