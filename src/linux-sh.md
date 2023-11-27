@@ -14,3 +14,6 @@ chmod -R u+rwx <file_or_directory>
 
 ## creating a file with some content on it
 echo "some nice content" >> /path/to/archive/archive.txt
+
+## setting wsl arch environment
+[some powerfull link here](https://gist.github.com/ld100/3376435a4bb62ca0906b0cff9de4f94b#install-docker)
