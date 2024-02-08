@@ -36,3 +36,6 @@ pg_restore -U <username> -d <database_name> /tmp/file
 ## turning root root again
 SELECT user, host, plugin FROM mysql.user WHERE user='root';
 ALTER USER 'root'@'%' IDENTIFIED WITH 'mysql_native_password' BY 'password';
+
+## Mysql error on DBeaver (Public Key Retrieval is not allowed):
+Fix it by changing the url to: jdbc:mysql://localhost:3306/db?allowPublicKeyRetrieval=true&useSSL=false
